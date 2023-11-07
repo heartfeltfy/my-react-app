@@ -1,7 +1,9 @@
+import Logo from "@/assets/logo.svg"
+
 export default function LoginPage() {
   return (
     <div className="min-h-full">
-      <p>登录页面</p>
+      <img src={Logo} alt="logo" className="w-16" />
     </div>
   )
 }
