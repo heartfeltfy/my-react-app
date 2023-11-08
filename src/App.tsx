@@ -6,6 +6,7 @@ import RequireAuth from "@/layout/RequireAuth.tsx"
 import Root from "@/routes/Root.tsx"
 import LoginPage from "@/pages/login/LoginPage.tsx"
 import ErrorPage from "@/pages/ErrorPage.tsx"
+import { useCopy } from "@/hooks/useCopy.ts"
 
 const router = createBrowserRouter([
   {
@@ -37,5 +38,6 @@ const router = createBrowserRouter([
   }
 ])
 export default function App() {
+  useCopy()
   return <RouterProvider router={router} />
 }
