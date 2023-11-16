@@ -1,3 +1,3 @@
 export default function Header() {
-  return <header>Header</header>
+  return <header className="h-14 bg-gray-900 text-stone-200">Header</header>
 }
