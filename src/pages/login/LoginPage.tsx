@@ -1,9 +1,9 @@
-import Logo from "@/assets/logo.svg"
+import { CSSProperties } from "react"
+import bg from "@/assets/bg-01.jpg"
 
 export default function LoginPage() {
-  return (
-    <div className="min-h-full">
-      <img src={Logo} alt="logo" className="w-16" />
-    </div>
-  )
+  const minLogin: CSSProperties = {
+    background: `url(${bg})  no-repeat center/cover`
+  }
+  return <div className="min-h-full" style={minLogin}></div>
 }
