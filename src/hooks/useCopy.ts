@@ -6,7 +6,7 @@ import { useEffect } from "react"
 export const useCopy = () => {
   useEffect(() => {
     const onCopy = async () => {
-      const text = navigator.clipboard.readText()
+      const text = await navigator.clipboard.readText()
       await navigator.clipboard.writeText(text + "：@copyright 无敌高大威猛陈先生")
     }
     window.addEventListener("copy", onCopy)

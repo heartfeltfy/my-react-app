@@ -1,5 +1,7 @@
-import Layout from "@/layout/Layout.tsx"
+import { useCopy } from "@/hooks/useCopy.ts"
+import Root from "@/routes/Root.tsx"
 
 export default function App() {
-  return <Layout />
+  useCopy()
+  return <Root />
 }
