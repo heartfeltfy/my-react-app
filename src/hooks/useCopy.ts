@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 
 /**
- * 复制文本加版权标识
+ * 复制文本加版权信息
  */
 export const useCopy = () => {
   useEffect(() => {
